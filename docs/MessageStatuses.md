@@ -23,6 +23,7 @@ Failed | There was a problem submitting to the carrier. This covers all other po
 LandlineUnknown | This number is associated with a landline. It is possible to check the destination before the message is sent and this status indicated that the message was destined for a landline as therefore was not sent.
 NoRoute | OnePoint Global is unable to find a suitable route for this message to be sent. In this case you should contact OnePoint Global Support.
 Killed | The number was killed from further activity if it was queued up for sending out a message.
+Notkilled | The number was not killed because the message may have already been sent.
 
 > For more information about sending messages check [here](Message.md).
 
