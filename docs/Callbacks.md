@@ -43,6 +43,8 @@ In each of these instances it is assumed that you have sent a message to that re
 }
 ```
 
+The following describes the elements of the JSON:
+
 Name | Description
 ---- | -----------
 Source | The source of the message. This can be a short code, a long number or a branded value up to 11 characters long.
