@@ -64,7 +64,7 @@ Status | Description
 It is possible to provide meta data with any API method (where appropriate) in order to help track your messaging more effectively. For more information on this refer to the [Meta Data documentation](docs/MetaData.md).
 
 ### Call Backs
-OnePoint global offers the ability to ca
+OnePoint global offers the ability for callbacks on many of the methods. For more information check [here](docs/Callbacks.md).
 
 ## API's
 The API's are split into the following:
