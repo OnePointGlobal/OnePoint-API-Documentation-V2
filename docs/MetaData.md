@@ -66,4 +66,4 @@ Content:
 }
 
 ```
-For more information on callback please check [here](Callbacks.md).
+For more information on callbacks please check [here](Callbacks.md).
