@@ -72,13 +72,13 @@ OnePoint Global makes it possible to include macros in your messaging that give 
 ## API's
 The API's are split into the following:
 
-1. Account - Session Management
+1. [Account](docs/Account.md) - Session Management
 1. Keyword - Keyword Management
 1. TinyUrl - TinyUrl Creation
 1. [Message](docs/Message.md) - SMS Message Management
 1. Survey - Survey Results
 1. Recipient - Upload Recipients with de-duplication and mobile number validation
-1. Usage - Usage reporting
+1. [Usage](docs/Usage.md) - Usage reporting
 
 ## Reporting Issues
 OnePoint Global is focused on continually improving the quality of its software where our customer's satisfaction is our No 1 priority. If you experience any issues then please report it through the public GitHub Issues. If you believe the issue is related to the security of the service then please contact us directly.

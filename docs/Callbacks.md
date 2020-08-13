@@ -28,6 +28,7 @@ In each of these instances it is assumed that you have sent a message to that re
   "Lookup": true,
   "Test": false,
   "Status": "sent",
+  "Segments": 1,
   "MetaData": 
     [
         { "RequestID": "1234567890DEFED" },

@@ -84,14 +84,26 @@ Status | Description
 ## Lookup
 Lookup a number on the network to see whether it is reachable and whether it is a mobile number.
 ```
-URL: https://api.1pt.mobi/gateway/api/Message/Lookup?number={number}
-Method: GET
+URL: base/Message/Lookup
+Method: POST
+{
+  "Number": "12345678901",
+  "MetaData": 
+    [
+        { "RequestID": "1234567890DEFED" },
+        { "OrgID": 1010 },
+        { "Instance": "ETRERT"},
+        { "Campaign": 1242 },
+        { "TimeStamp": "2020-02-04T11:47:33.645773+00:00" }
+    ]
+}
 ```
 ### Parameters
 
 Name | Description
 ---- | -----------
-number | The number to lookup
+Number | The number to lookup
+MetaData | Optional | For more information on metadata check [here](MetaData.md).
 
 ### Returns
 ```
