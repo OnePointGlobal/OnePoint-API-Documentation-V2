@@ -1,15 +1,20 @@
 # Welcome to the OnePoint Global API V2.0
-Welcome to the OnePoint API Documentation. This is for general use of OnePoint Global's Open API available on the end point https://api.1pt.mobi/gateway, which contains a limited copy of the documentation.
+Welcome to the OnePoint API Documentation. This is for general use of OnePoint Globals Open API. Using this RESTful API you can send and receive SMS messages, track the delivery of sent messages, retrieve the message history, manage keywords and surveys.
 
-The API offers RESTful access to a set of capabilities that allow access to a global SMS network.
+## Base URL
+All URLs referenced in this documentation have the following base:
+```
+https://api.1pt.mobi/gateway2/api
+```
 
-## Working with OnePoint's API
+The API is offered over HTTPS, HTTP is not supported in order to support a secure platform.
+
+## Authentication
 OnePoint's API requires authentication to be achieved to gain a session that is then used for subsequent requests to the API. It is then recommended that you discard the session in a proper manner.
 
-### Authentication
-Authentication is done using the following API:
+Authentication is achieved using the following API:
 ```
-URL: https://api.1pt.mobi/gateway/api/Account/Login
+URL: base/Account/Login
 Method: POST
 Content: { "Username":"username", "Password":"password" }
 ```
@@ -19,31 +24,32 @@ All API's will return either a success status (200) or a failure status which ca
 { "SessionId": "ABCCDEFG" }
 ```
 
-The Session ID must be used in subsequent API calls by placing it in the header with the name SessionId. For example, to send an SMS the following API would be used:
+The Session ID must be used in subsequent API calls by placing it in the headers as a basic authentication header. For example, to send an SMS the following API would be used:
 ```
-URL: https://api.1pt.mobi/gateway/api/Message/Send
+URL: base/Message/Send
 Header:
-SessionId:"ABCDEFG"
+Authorization: Basic ABCDEFG
 Method: POST
 Content:
 {
-  "Source": "sample string 1",
-  "Destination": "sample string 2",
-  "Message": "sample string 3",
+  "Source": "12345678901",
+  "Destination": "12345678901",
+  "Message": "message",
   "Reply": true,
   "When": "2020-02-04T11:47:33.645773+00:00"
+  "Window": [{ From: "09:00", To: "16:00", Days: "1,2,3,4,5"}]
 }
 ```
 
 When a session is no longer required then the following API will remove it:
 ```
-URL: https://api.1pt.mobi/gateway/api/Logout
+URL: base/Account/Logout
 Header:
-SessionId:"ABCDEFG"
+Authorization: Basic ABCDEFG
 Method: POST
 ```
 
-### Statuses
+## Statuses
 Every API will return a status which can be one of the following:
 
 Status | Description
@@ -53,6 +59,12 @@ Status | Description
 401 | Unauthorized. The session details cannot be successfully authenticated for the API method.
 
 > Any other Status values are included in the documentation for the API method. 
+
+## Meta Data
+It is possible to provide meta data with any API method (where appropriate) in order to help track your messaging more effectively. For more information on this refer to the Meta Data documentation.
+
+### Call Backs
+OnePoint global offers the ability to ca
 
 ## API's
 The API's are split into the following:
