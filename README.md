@@ -49,7 +49,7 @@ Authorization: Basic ABCDEFG
 Method: POST
 ```
 
-## Statuses
+## HTTP Statuses
 Every API will return a status which can be one of the following:
 
 Status | Description
@@ -76,8 +76,8 @@ The API's are split into the following:
 1. [Keyword](docs/Keyword.md) - Keyword Management
 1. [TinyUrl](doc/TinyUrl.md) - TinyUrl Creation
 1. [Message](docs/Message.md) - SMS Message Management
-1. Survey - Survey Results
-1. Recipient - Upload Recipients with de-duplication and mobile number validation
+1. [Survey](docs/Survey.md) - Survey Results
+1. [Recipient](doc/Recipient.md) - Upload Recipients with de-duplication and mobile number validation
 1. [Usage](docs/Usage.md) - Usage reporting
 
 ## Reporting Issues
