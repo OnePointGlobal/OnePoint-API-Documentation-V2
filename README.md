@@ -61,7 +61,7 @@ Status | Description
 > Any other Status values are included in the documentation for the API method. 
 
 ## Meta Data
-It is possible to provide meta data with any API method (where appropriate) in order to help track your messaging more effectively. For more information on this refer to the [Meta Data documentation](docs/MetaData.md).
+It is possible to provide meta data with any API method (where appropriate) in order to help track your messaging more effectively. For more information on this refer to the [Metadata Documentation](docs/MetaData.md).
 
 ## Call Backs
 OnePoint Global offers the ability for callbacks on many of the methods. For more information check [here](docs/Callbacks.md).
@@ -74,7 +74,7 @@ The API's are split into the following:
 
 1. [Account](docs/Account.md) - Session Management
 1. [Keyword](docs/Keyword.md) - Keyword Management
-1. TinyUrl - TinyUrl Creation
+1. [TinyUrl](doc/TinyUrl.md) - TinyUrl Creation
 1. [Message](docs/Message.md) - SMS Message Management
 1. Survey - Survey Results
 1. Recipient - Upload Recipients with de-duplication and mobile number validation
