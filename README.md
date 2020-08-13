@@ -63,8 +63,11 @@ Status | Description
 ## Meta Data
 It is possible to provide meta data with any API method (where appropriate) in order to help track your messaging more effectively. For more information on this refer to the [Meta Data documentation](docs/MetaData.md).
 
-### Call Backs
-OnePoint global offers the ability for callbacks on many of the methods. For more information check [here](docs/Callbacks.md).
+## Call Backs
+OnePoint Global offers the ability for callbacks on many of the methods. For more information check [here](docs/Callbacks.md).
+
+## Macros
+OnePoint Global makes it possible to include macros in your messaging that give access to powerful tools such as the OnePoint Global Tiny URL Service. For more information check [here](docs/Macros.md).
 
 ## API's
 The API's are split into the following:

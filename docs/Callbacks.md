@@ -5,4 +5,4 @@ Calls backs are used to handle asynchronous events in the OnePoint Global Platfo
 1. Survey Results Collection
 
 ## Messaging
-When a message is sent it is possible to 
+When a message is sent it is possible to specify a call method or use the one set up in your account. 

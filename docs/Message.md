@@ -39,7 +39,7 @@ Window | Optional (Default: any time) | An array of windows that the message can
 Callback | Optional (Default: Account Settings) | There is the ability to override the standard callback method associate with you r account. For more information on callbacks check here.
 Lookup | Optional (Default: false) | A boolean value indicating whether a lookup on the destination number should be carried out before it is sent to see whether the number is a landline or mobile. If the number is a landline it will not be sent. This combines the lookup method and the send into one process for you.
 Test | Optional (Default: false) | A boolean value that indicates whether the message should be sent or not. If set to true the message will not be sent, but the internal OnePoint Global Routing will be tested.
-
+Macros | Optional | A set of values to use as insert references for macros. For more information on this please check [here](Macros.md).
 
 ### Returns
 ```
