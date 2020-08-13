@@ -1,5 +1,8 @@
 # Callbacks
-Calls backs are used to handle asynchronous events in the OnePoint Global Platform. These refer to the following areas:
+
+> For more information visit the [main page](../README.md)
+
+Callbacks are used to handle asynchronous events in the OnePoint Global Platform. These refer to the following areas:
 1. Messaging
 1. Recipient Upload and validation
 1. Survey Results Collection
@@ -80,6 +83,7 @@ Keyword | An inbound message that has been processed by OnePoint Global as one o
 Click | A tiny URL was clicked on. In this instance the message includes the tiny URL that was clicked on.
 Killed | The message has been killed before it was sent.
 NotKilled | There was no message to be killed so it could have been sent.
+
 
 ## Responding to Callbacks
 Depending on the type of message depends on the type of response the OnePoint Global Platform expects.  

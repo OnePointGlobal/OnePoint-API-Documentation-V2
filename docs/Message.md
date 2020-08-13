@@ -1,4 +1,7 @@
 # Message
+
+> For more information visit the [main page](../README.md)
+
 The Message API's allow you to send SMS messages across a global network with the addition of supporting methods for lookup and validation of mobile numbers.
 
 ## Sending a Message

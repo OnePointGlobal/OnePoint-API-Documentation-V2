@@ -1,4 +1,7 @@
 # Macros
+
+> For more information visit the [main page](../README.md)
+
 OnePoint Global support the principle ability to insert values into a message. This is achieved through its Macro Capability. Macros can be used during the recipient upload process and the Messaging process.
 
 ## Formatting Macros

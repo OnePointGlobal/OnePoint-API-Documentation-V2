@@ -1,4 +1,7 @@
 # Message Windows
+
+> For more information visit the [main page](../README.md)
+
 Message windows are used to control when a message can be sent from the OnePoint Global platform. It is based on the possibility that messages could be queued up in the platform (due to a heavy load) and they should not be sent out at in appropriate times. If a window is defined then the platform knows to hold on to the message if the associated window is closed.
 
 A windows is defined by three parameters:

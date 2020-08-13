@@ -1,4 +1,7 @@
 # Usage
+
+> For more information visit the [main page](../README.md)
+
 Messaging usage.
 
 ## Message History
