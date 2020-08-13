@@ -46,11 +46,9 @@ the survey results depending on the format requested.
 
 Status | Description
 ------ | -----------
-200 | Success
-400 | Invalid Session. Please ensure you Login first
-400 | This survey does not exist
+404 | Not Found
 400 | There was a problem getting the results of the survey
-400 | No results found since 2020-02-04T16:09:42.9927661+00:00
+404 | No results found since 2020-02-04T16:09:42.9927661+00:00
 
 ## GetSnapshot
 Get a snapshot of specific question results
@@ -70,9 +68,7 @@ The snapshot of a question varies depending on the type of question.
 
 Status | Description
 ------ | -----------
-200 | Success
-400 | Invalid Session. Please ensure you Login first
-400 | This survey does not exist
+404 | This survey does not exist
 400 | There was a problem processing the survey snapshot
 400 | The survey has not yet shown any activity
 400 | The sortOrder is out of range - it must be between 1 and the number of questions
@@ -111,9 +107,7 @@ Outstanding | The number of interviews outstanding in the survey.
 
 Status | Description
 ------ | -----------
-200 | Success
-400 | Invalid Session. Please ensure you Login first
-400 | This survey does not exist
+404 | This survey does not exist
 400 | The survey has not yet shown any activity
 400 | The sortOrder is out of range - if must be between 1 and the number of questions
 
