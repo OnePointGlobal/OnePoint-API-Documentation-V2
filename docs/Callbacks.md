@@ -35,7 +35,11 @@ In each of these instances it is assumed that you have sent a message to that re
         { "Instance": "ETRERT"},
         { "Campaign": 1242 },
         { "TimeStamp": "2020-02-04T11:47:33.645773+00:00" }
-    ]
+    ],
+  "MessageID": "MS1312312312323",
+  "Carrier": "EE",
+  "Reachable": true,
+  "NumberType": "Mobile"    
 }
 ```
 
@@ -51,6 +55,10 @@ Lookup | A boolean value indicating whether a lookup on the destination number s
 Test | A boolean value that indicates whether the message should be sent or not. If set to true the message will not be sent, but the internal OnePoint Global Routing will be tested.
 Status | For more information on statuses check [here](MessageStatuses.md).
 MetaData | For more information on metadata check [here](MetaData.md).
+MessageID | The OnePoint Global Message ID available for you to track the message in other methods and callbacks.
+Carrier | The name of the carrier. This can be any valid string or the word `Unknown`
+Reachable | A boolean value indicating whether the number is reachable.
+NumberType | A string indicating the type of number - `Mobile`, `Landline` or `Unknown`
 
 
 ### Callback Types
@@ -73,7 +81,7 @@ Depending on the type of message depends on the type of response the OnePoint Gl
 For status type callbacks (Receipt, Lookup, Info, Help, Stop and Click) you can respond with an HTTP Success to complete the process. The OnePoint Global Platform will continue after any response and timeout within 30 seconds of sending the response. Any failures detected will reported through the Fallback URL and/or email to you depending on your account setup.
 
 ### Response Type Callbacks
-For response type callbacks (Message, Keyword) the OnePoint Global Platform will wait for a response that include a message to be sent to the recipient of the outbound message. This response will need to take the form of the [Message/Send API method](Message.md). In these instances the messageID value will remain the same as the original message.
+For response type callbacks (Message, Keyword) the OnePoint Global Platform will wait for a response that include a message to be sent to the recipient of the outbound message. This response will need to take the form of the [Message/Send API method](Message.md). In these instances the `MessageID` value will remain the same as the original message.
 
 
 

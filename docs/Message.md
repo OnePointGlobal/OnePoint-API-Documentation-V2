@@ -59,7 +59,7 @@ Macros | Optional | A set of values to use as insert references for macros. For 
 
 Name | Description
 ---- | -----------
-MessageID | Always Present | The OnePoint Global Message ID available for you to track the message in other methods and callbacks.
+MessageID | The OnePoint Global Message ID available for you to track the message in other methods and callbacks.
 Status | The initial status of the send. This can be any one of the following [values](MessageStatuses.md).
 
 If a lookup is performed as part of the process the following return values will be included:
