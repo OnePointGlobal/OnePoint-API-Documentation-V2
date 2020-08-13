@@ -73,7 +73,7 @@ OnePoint Global makes it possible to include macros in your messaging that give 
 The API's are split into the following:
 
 1. [Account](docs/Account.md) - Session Management
-1. Keyword - Keyword Management
+1. [Keyword](docs/Keyword.md) - Keyword Management
 1. TinyUrl - TinyUrl Creation
 1. [Message](docs/Message.md) - SMS Message Management
 1. Survey - Survey Results
