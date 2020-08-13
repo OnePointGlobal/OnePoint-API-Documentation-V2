@@ -14,6 +14,8 @@ When a message is sent it is possible to specify a callback method or use the on
 1. A recipient replies with the keywords `STOP`, `HELP` or `INFO`.
 1. A recipient responds with a keyword that is owned by you.
 1. A recipient responds and you were the last account to send a message to them.
+1. The message was killed before it was sent.
+1. There was no message to be killed. So it could have already been sent.
 
 In each of these instances it is assumed that you have sent a message to that recipient. It is possible in your account to set up a call back URL which will always be used with the HTTP POST Method and provide a JSON response taking the following format:
 
@@ -76,6 +78,8 @@ Help | An inbound message that has been processed by OnePoint Global as an help 
 Stop | A inbound message that has been detected as a STOP message from a recipient and has been added to the OnePoint Global STOP list.
 Keyword | An inbound message that has been processed by OnePoint Global as one of your keywords.
 Click | A tiny URL was clicked on. In this instance the message includes the tiny URL that was clicked on.
+Killed | The message has been killed before it was sent.
+NotKilled | There was no message to be killed so it could have been sent.
 
 ## Responding to Callbacks
 Depending on the type of message depends on the type of response the OnePoint Global Platform expects.  

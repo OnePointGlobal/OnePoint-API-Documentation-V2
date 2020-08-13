@@ -81,6 +81,40 @@ Status | Description
 400 | The message length must be greater than zero
 400 | There was a problem sending the message. Please refer to the status
 
+## Kill
+Kill off any outstanding activity with one or some message, by providing an array or information.
+```
+URL: base/Message/Kill
+Method: POST
+{
+  [
+    {
+      "Destination": "12345678901",
+      "MetaData": 
+      [
+        { "RequestID": "1234567890DEFED" },
+        { "OrgID": 1010 },
+        { "Instance": "ETRERT"},
+        { "Campaign": 1242 },
+        { "TimeStamp": "2020-02-04T11:47:33.645773+00:00" }
+      ],
+      "Callback": "https://yourco.com/api/messagetracker",
+    },
+    ....
+  ]
+}
+```
+### Parameters
+
+Name | Type | Description
+---- | ---- | -----------
+Destination | Mandatory | The destination of the message. This must be the full number prefixed with the country code and no leading zeros.
+Callback | Optional (Default: Account Settings) | There is the ability to override the standard callback method associate with you r account. For more information on callbacks check here.
+MetaData | Optional | For more information on metadata check [here](MetaData.md).
+
+### Returns 
+Nothing
+
 ## Lookup
 Lookup a number on the network to see whether it is reachable and whether it is a mobile number.
 ```
