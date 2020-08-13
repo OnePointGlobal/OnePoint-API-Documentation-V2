@@ -73,7 +73,6 @@ The API's are split into the following:
 1. Keyword - Keyword Management
 1. TinyUrl - TinyUrl Creation
 1. [Message](docs/Message.md) - SMS Message Management
-1. Test - SMS Message Test Service
 1. Survey - Survey Results
 1. Recipient - Upload Recipients with de-duplication and mobile number validation
 
