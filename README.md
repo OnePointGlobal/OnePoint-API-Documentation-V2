@@ -61,7 +61,7 @@ Status | Description
 > Any other Status values are included in the documentation for the API method. 
 
 ## Meta Data
-It is possible to provide meta data with any API method (where appropriate) in order to help track your messaging more effectively. For more information on this refer to the [Meta Data documentation](docs/MetaDatas.md).
+It is possible to provide meta data with any API method (where appropriate) in order to help track your messaging more effectively. For more information on this refer to the [Meta Data documentation](docs/MetaData.md).
 
 ### Call Backs
 OnePoint global offers the ability to ca
