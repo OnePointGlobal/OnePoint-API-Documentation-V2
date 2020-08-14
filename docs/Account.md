@@ -36,7 +36,7 @@ properties in your account).
 ```
 URL: base/Account/LoginWithUid
 Method: POST
-Content: "Uid" }
+Content: "Uid"
 ```
 ### Parameters
 

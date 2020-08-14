@@ -14,9 +14,9 @@ OnePoint's API requires authentication to be achieved to gain a session that is 
 
 Authentication is achieved using the following API:
 ```
-URL: base/Account/Login
+URL: base/Account/LoginWithUid
 Method: POST
-Content: { "Username":"username", "Password":"password" }
+Content: "23409328402398432048"
 ```
 
 All API's will return either a success status (200) or a failure status which can vary depending on the error. If the above API is successful then it will return a Session ID in the following format:
