@@ -74,7 +74,7 @@ The API's are split into the following:
 
 1. [Account](docs/Account.md) - Session Management
 1. [Keyword](docs/Keyword.md) - Keyword Management
-1. [TinyUrl](doc/TinyUrl.md) - TinyUrl Creation
+1. [TinyUrl](docs/TinyUrl.md) - TinyUrl Creation
 1. [Message](docs/Message.md) - SMS Message Management
 1. [Survey](docs/Survey.md) - Survey Results
 1. [Recipient](docs/Recipient.md) - Upload Recipients with de-duplication and mobile number validation
