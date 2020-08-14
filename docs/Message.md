@@ -36,7 +36,7 @@ Name | Type | Description
 ---- | ---- | -----------
 Source | Mandatory | The source of the message. This can be a short code, a long number or a branded value up to 11 characters long.
 Destination | Mandatory | The destination of the message. This must be the full number prefixed with the country code and no leading zeros.
-Message | Message | The text message to send. This can be up to 2000 characters long.
+Message | Mandatory | The text message to send. This can be up to 2000 characters long.
 Reply | Optional (Default: false) | A boolean value indicating whether the message can be replied to or not. If this is true then the destination may be replaced depending on destination value and the route the message has to take to get to its destination.
 When | Optional (Default: now) | A date and time indicating when the message should be sent. This allows the opportunity to submit a message to be sent at a later date.
 Window | Optional (Default: any time) | An array of windows that the message can be sent. The allows you to specify different windows as to when the message can be sent. Each window follows these [rules](Windows.md).

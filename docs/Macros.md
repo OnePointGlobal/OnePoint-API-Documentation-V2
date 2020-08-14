@@ -70,7 +70,7 @@ Method: POST
 > If there is a conflict with the macro list supplied in the API call and the standard macros the macro list takes precedence.
 
 ## Using the MetaData
-In the same way the Macros can be used from the API call it is also possible to use the MetaData entries. This save on duplication of entries. Using the above example the following macro formation could be used:
+In the same way the Macros can be used from the API call it is also possible to use the MetaData entries. This saves on duplication of entries. Using the above example the following macro formation could be used:
 
 ```
 {tiny({long}/{RequestID}, {short})}
