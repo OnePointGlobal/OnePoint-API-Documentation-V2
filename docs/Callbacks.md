@@ -148,7 +148,7 @@ Name | Description
 Url | The callback Url. this can be an array of strings to support a list of Urls to attempt.
 Timeout | For each attempt, what timeout period in milliseconds to use.
 TotalTimeout | The total timeout to limit all attempts on all attempts.
-Retries | The number of attempts to try the call back.
+Retries | The number of attempts to try the call back on an individual Url.
 Action | The action to take. This can contain and/or Sms and Email as keywords. It requires a action list to be set up in you OnePoint Global Administration Account.
 
 ### OnePoint Global Administration Account
