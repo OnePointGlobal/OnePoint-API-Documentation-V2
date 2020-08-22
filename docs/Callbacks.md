@@ -94,5 +94,62 @@ For status type callbacks (Receipt, Lookup, Info, Help, Stop and Click) you can 
 ### Response Type Callbacks
 For response type callbacks (Message, Keyword) the OnePoint Global Platform will wait for a response that include a message to be sent to the recipient of the outbound message. This response will need to take the form of the [Message/Send API method](Message.md). In these instances the `MessageID` value will remain the same as the original message.
 
+## Handling Exceptions
+The OnePoint Global Platform supports a number exceptions to the normal process:
+1. Timeout adjustment. You can set how long the OnePoint Global platform will wait before it gives up on a call back.
+1. The number of times to try if there is a failure accessing a callback.
+1. The action to take if a callback continues to fail. This can be an email (and/or SMS) alert is sent to inform you the failure is taking place. OnePoint Global will be notified that this is happening and depending on the issue will respond through its normal support processes.
 
+All these exceptions are managed either as additional parameters along with the callback reference in a call to the OnwPoint Global API, or through your OnePoint Global Administration Account.
 
+### Callback API Reference
+The example below shows the wparameters required to send a message with a callback reference:
+
+```
+URL: base/Message/Send
+Method: POST
+{
+  "Source": "12345678901",
+  "Destination": "12345678901",
+  "Message": "message",
+  "Reply": true,
+  "When": "2020-02-04T11:47:33.645773+00:00",
+  "Window": [{ From: "09:00", To: "16:00", Days: "1,2,3,4,5"}],
+  "Callback": "https://yourco.com/api/messagetracker",
+  "Lookup": true,
+  "Test": false,
+  "Timeout": "4320",
+  "MetaData": 
+    [
+        { "RequestID": "1234567890DEFED" },
+        { "OrgID": 1010 },
+        { "Instance": "ETRERT"},
+        { "Campaign": 1242 },
+        { "TimeStamp": "2020-02-04T11:47:33.645773+00:00" }
+    ]
+}
+```
+
+Additional parameters can be added along with the `Callback` parameter in the following way:
+```
+  "Callback":
+    [ 
+      { "Url": "https://yourco.com/api/messagetracker" },
+      { "Timeout": 2000 },
+      { "TotalTimeout": 30000 },
+      { "Retries": 10 },
+      { "Action": "Email,Sms" }
+    ]
+
+```
+
+Name | Description
+---- | -----------
+Url | The callback Url. this can be an array of strings to support a list of Urls to attempt.
+Timeout | For each attempt, what timeout period in milliseconds to use.
+TotalTimeout | The total timeout to limit all attempts on all attempts.
+Retries | The number of attempts to try the call back.
+Action | The action to take. This can contain and/or Sms and Email as keywords. It requires a action list to be set up in you OnePoint Global Administration Account.
+
+### OnePoint Global Administration Account
+Your OnePoint Global Administration Account includes the same parameters that you can use in the API with the addition of a an email and/or SMS circulation list.
