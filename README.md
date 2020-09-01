@@ -84,4 +84,4 @@ The API's are split into the following:
 After you have read all the documentation we have tried to answer all your frequently asked questions [here](docs/Faq.md).
 
 ## Reporting Issues
-OnePoint Global is focused on continually improving the quality of its software where our customer's satisfaction is our No 1 priority. If you experience any issues then please report it through the public GitHub Issues. If you believe the issue is related to the security of the service then please contact us directly.
+OnePoint Global is focused on continually improving the quality of its software where our customer's satisfaction is our No 1 priority. If you experience any issues or have any question then please report it through the public [GitHub Issues](https://github.com/OnePointGlobal/OnePoint-API-Documentation-V2/issues). If you believe the issue is related to the security of the service then please contact us directly.
