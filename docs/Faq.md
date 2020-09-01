@@ -22,5 +22,9 @@ The OnePoint Global Platform has STOP handling built in. OnePoint Global manages
 
 ## Who handles data destruction?
 
-The OnePoint Global has a standard data protection policy.
+The OnePoint Global has a [Data Protection Policy](http://resources.onepointglobal.com/data-protection/) that supports data destruction.
+
+It is also possible to `kill` data associatedw tih a specific mobile number that is also associated with your account. For more information [check here](Message.md).
+
+Ultimately you may be interested in a custom Data Protection Policy. In this instance please contact our [Client Services Team](support@onepointglobal.com).
 
