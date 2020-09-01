@@ -81,7 +81,7 @@ The API's are split into the following:
 1. [Usage](docs/Usage.md) - Usage reporting
 
 ## Frequently Asked Questions
-After you have read all the documentation we have tried to answer all your frequently asked questions [here](Faq.md).
+After you have read all the documentation we have tried to answer all your frequently asked questions [here](docs/Faq.md).
 
 ## Reporting Issues
 OnePoint Global is focused on continually improving the quality of its software where our customer's satisfaction is our No 1 priority. If you experience any issues then please report it through the public GitHub Issues. If you believe the issue is related to the security of the service then please contact us directly.
