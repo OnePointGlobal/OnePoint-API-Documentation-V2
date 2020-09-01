@@ -25,5 +25,6 @@ NoRoute | OnePoint Global is unable to find a suitable route for this message to
 Killed | The number was killed from further activity if it was queued up for sending out a message.
 Notkilled | The number was not killed because the message may have already been sent.
 
+
 > For more information about sending messages check [here](Message.md).
 
