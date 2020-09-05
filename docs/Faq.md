@@ -1,3 +1,8 @@
+---
+layout: default
+title: FAQ's
+nav_order: 2
+---
 # FAQ
 
 > For more information visit the [main page](../README.md)

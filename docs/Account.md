@@ -1,4 +1,4 @@
-# Account API's
+# Account
 
 > For more information visit the [main page](../README.md)
 
