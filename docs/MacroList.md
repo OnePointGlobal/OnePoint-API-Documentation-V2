@@ -1,3 +1,9 @@
+---
+layout: default
+title: Macro List
+parent: Macros
+nav_order: 1
+---
 # Macro Reference
 
 > For more information visit the [main page](../README.md)

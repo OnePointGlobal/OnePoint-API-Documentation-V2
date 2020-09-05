@@ -1,3 +1,9 @@
+---
+layout: default
+title: Macros
+nav_order: 5
+has_children: true
+---
 # Macros
 
 > For more information visit the [main page](../README.md)
