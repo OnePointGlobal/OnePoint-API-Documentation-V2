@@ -1,3 +1,9 @@
+---
+layout: default
+title: Message Statuses
+parent: Messaging
+nav_order: 1
+---
 # Message Statuses
 
 > For more information visit the [main page](../README.md)

@@ -48,7 +48,7 @@ Uid | The User Id available by logging into your account and checking your accou
 ```
 { "SessionId": "ABCCDEFG" }
 ```
-The `SessionId` must be used in subsquent calls by placing it in the header a value with the name `SessionId`.
+The `SessionId` must be used in subsequent calls by placing it in the header a value with the name `SessionId`.
 ### HTTP Statuses
 
 Status | Description

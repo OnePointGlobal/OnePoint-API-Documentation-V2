@@ -1,4 +1,10 @@
-# Message
+---
+layout: default
+title: Messaging
+nav_order: 3
+has_children: true
+---
+# Messaging
 
 > For more information visit the [main page](../README.md)
 
