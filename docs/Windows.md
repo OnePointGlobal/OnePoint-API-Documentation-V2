@@ -1,3 +1,9 @@
+---
+layout: default
+title: Message Windows
+parent: Messaging
+nav_order: 6
+---
 # Message Windows
 
 > For more information visit the [main page](../README.md)

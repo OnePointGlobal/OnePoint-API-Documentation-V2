@@ -1,3 +1,9 @@
+---
+layout: default
+title: Metadata
+parent: Messaging
+nav_order: 5
+---
 # Metadata
 
 > For more information visit the [main page](../README.md)

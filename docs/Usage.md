@@ -1,3 +1,9 @@
+---
+layout: default
+title: Message History
+parent: Messaging
+nav_order: 6
+---
 # Usage
 
 > For more information visit the [main page](../README.md)
