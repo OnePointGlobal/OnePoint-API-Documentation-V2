@@ -1,3 +1,8 @@
+---
+layout: default
+title: Account
+nav_order: 3
+---
 # Account
 
 > For more information visit the [main page](../README.md)
