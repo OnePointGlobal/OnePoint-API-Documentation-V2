@@ -73,7 +73,8 @@ List all keywords associated with your account.
 URL: base/Keyword/List
 Method: GET
 ```
-#### Returns
+
+### Returns
 ```
 [
     { "Keyword":"keyword", "FinishDate", "2020-02-04T04:55:32.3122889+00:00",
@@ -90,6 +91,7 @@ Method: GET
     { "Keyword":"keyword", "FinishDate", "2020-02-04T04:55:32.3122889+00:00" },
 ]
 ```
+
 ### HTTP Statuses
 In addition to the standard responses the following HTTP statuses can be returned:
 
