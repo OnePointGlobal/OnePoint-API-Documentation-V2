@@ -12,7 +12,7 @@ When a number responds to an SMS from OnePoint Global we look for a number of ke
 
 Keyword | Description
 ------- | -----------
-STOP | A respondent usually replied to a message with STOP to indicate they no longer want any further messages from the number.
+STOP | A respondent usually replied to a message with STOP to indicate they no longer want any further messages from the number. Added to this we support the following associated keywords and phrases: stop all, cancel, end, unsubscribe, quit. Added to that we also have [language support](Languages.md)
 HELP | When a respondent is unsure as to what to do in some countries we have to respond to this keyword with a support message to contact us or use the STOP keyword.
 INFO | Similar to the HELP keyword
 
