@@ -2,5 +2,7 @@ remote_theme: pmarsceill/just-the-docs
 title: OnePoint Global API 
 description: The OnePoint Global API Documentation
 
+color_scheme: default
+
 # Enable or disable heading anchors
 heading_anchors: true
