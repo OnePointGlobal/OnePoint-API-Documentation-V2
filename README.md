@@ -3,7 +3,7 @@ layout: default
 title: Home
 nav_order: 1
 ---
-# Welcome to the OnePoint Global API V2.0
+# Welcome to the OnePoint Global API
 Welcome to the OnePoint API Documentation. This is for general use of OnePoint Globals Open API. Using this RESTful API you can send and receive SMS messages, track the delivery of sent messages, retrieve the message history, manage keywords and surveys.
 
 ## Base URL
