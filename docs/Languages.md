@@ -11,7 +11,7 @@ nav_order: 3
 SMS Supports all languages, but there are some important points that need to be understood:
 
 ## Character Sets
-Whilst the OnePoint Global Platform will automatically handle any characters provided in a message you want o send out, you need to be aware that some messages can take up more space that you expect. Generally speaking there are three character sets to be aware of:
+Whilst the OnePoint Global Platform will automatically handle any characters provided in a message you want to send out, you need to be aware that some messages can take up more space that you expect. Generally speaking there are three character sets to be aware of:
 
 1. GSM
 1. UTF8
