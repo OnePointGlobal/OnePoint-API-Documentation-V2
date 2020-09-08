@@ -32,7 +32,7 @@ Method: POST
 
 Name | Description
 ---- | -----------
-Keyword | The keyword which can be between 3 and 50 characters long can can only contain alphanumerics
+Keyword | The keyword which can be between 3 and 50 characters long can only contain alphanumerics
 FinishDate | The date the keyword expires. This should be set in the future.
 MetaData | Optional | For more information on metadata check [here](MetaData.md).
 
