@@ -2,6 +2,7 @@ remote_theme: pmarsceill/just-the-docs
 title: OnePoint Global API 
 description: The OnePoint Global API Documentation
 url: "https://onepointglobal.github.io/OnePoint-API-Documentation-V2" 
+baseurl: "/OnePoint-API-Documentation-V2"
 
 color_scheme: default
 
