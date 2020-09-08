@@ -8,7 +8,7 @@ nav_order: 2
 
 > For more information visit the [main page](../README.md)
 
-When a number responds to an SMS from OnePoint Global we look for a number of keywords an reply to them automatically in line with the countries standard requirements. These keywords are:
+When a number responds to an SMS from OnePoint Global we look for a number of keywords and reply to them automatically in line with the countries standard requirements. These keywords are:
 
 Keyword | Description
 ------- | -----------
@@ -17,7 +17,7 @@ HELP | When a respondent is unsure as to what to do in some countries we have to
 INFO | Similar to the HELP keyword
 
 ## The Process
-The STOP keyword triggers a special process within the OnePoint Global that consists of the following steps:
+The STOP keyword triggers a special process within the OnePoint Global system that consists of the following steps:
 
 1. The mobile number is placed on the OnePoint Global STOP List
 1. You are notified that this has taken place should you have a [Callback](Callbacks.md) set up.

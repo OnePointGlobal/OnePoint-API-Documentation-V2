@@ -18,7 +18,7 @@ When a message is sent it is possible to specify a callback method or use the on
 1. The message has timed out.
 1. The message has been sent.
 1. The message delivery fails.
-1. A carrier provide an update on the progress of the message, which also include a failure.
+1. A carrier provides an update on the progress of the message, which also include a failure.
 1. A tiny URL provided by OnePoint Global is clicked on in a message that was provided.
 1. A recipient replies with the keywords `STOP`, `HELP` or `INFO`.
 1. A recipient responds with a keyword that is owned by you.
@@ -95,21 +95,21 @@ NotKilled | There was no message to be killed so it could have been sent.
 Depending on the type of message depends on the type of response the OnePoint Global Platform expects.  
 
 ### Status Type Callbacks
-For status type callbacks (Receipt, Lookup, Info, Help, Stop and Click) you can respond with an HTTP Success to complete the process. The OnePoint Global Platform will continue after any response and timeout within 30 seconds of sending the response. Any failures detected will reported through the Fallback URL and/or email to you depending on your account setup.
+For status type callbacks (Receipt, Lookup, Info, Help, Stop and Click) you can respond with an HTTP Success to complete the process. The OnePoint Global Platform will continue after any response and timeout within 30 seconds of sending the response. Any failures detected will be reported through the Fallback URL and/or email to you depending on your account setup.
 
 ### Response Type Callbacks
-For response type callbacks (Message, Keyword) the OnePoint Global Platform will wait for a response that include a message to be sent to the recipient of the outbound message. This response will need to take the form of the [Message/Send API method](Message.md). In these instances the `MessageID` value will remain the same as the original message.
+For response type callbacks (Message, Keyword) the OnePoint Global Platform will wait for a response that includes a message to be sent to the recipient of the outbound message. This response will need to take the form of the [Message/Send API method](Message.md). In these instances the `MessageID` value will remain the same as the original message.
 
 ## Handling Exceptions
-The OnePoint Global Platform supports a number exceptions to the normal process:
+The OnePoint Global Platform supports a number of exceptions to the normal process:
 1. Timeout adjustment. You can set how long the OnePoint Global platform will wait before it gives up on a call back.
 1. The number of times to try if there is a failure accessing a callback.
-1. The action to take if a callback continues to fail. This can be an email (and/or SMS) alert is sent to inform you the failure is taking place. OnePoint Global will be notified that this is happening and depending on the issue will respond through its normal support processes.
+1. The action to take if a callback continues to fail. This can be an email (and/or SMS) alert which is sent to inform you the failure is taking place. OnePoint Global will be notified that this is happening and depending on the issue will respond through its normal support processes.
 
-All these exceptions are managed either as additional parameters along with the callback reference in a call to the OnwPoint Global API, or through your OnePoint Global Administration Account.
+All these exceptions are managed either as additional parameters along with the callback reference in a call to the OnePoint Global API, or through your OnePoint Global Administration Account.
 
 ### Callback API Reference
-The example below shows the wparameters required to send a message with a callback reference:
+The example below shows the parameters required to send a message with a callback reference:
 
 ```
 URL: base/Message/Send
@@ -155,7 +155,7 @@ Url | The callback Url. this can be an array of strings to support a list of Url
 Timeout | For each attempt, what timeout period in milliseconds to use.
 TotalTimeout | The total timeout to limit all attempts on all attempts.
 Retries | The number of attempts to try the call back on an individual Url.
-Action | The action to take. This can contain and/or Sms and Email as keywords. It requires a action list to be set up in you OnePoint Global Administration Account.
+Action | The action to take. This can contain and/or SMS and Email as keywords. It requires an action list to be set up in your OnePoint Global Administration Account.
 
 ### OnePoint Global Administration Account
 Your OnePoint Global Administration Account includes the same parameters that you can use in the API with the addition of a an email and/or SMS circulation list.

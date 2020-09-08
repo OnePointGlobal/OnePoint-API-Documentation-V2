@@ -5,13 +5,13 @@
 The TinyUrl API's allow you to generate tiny URL's for your SMS messages.
 
 ## Custom Tiny URL's
-OnePoint supports custom Tiny URL's for each user of the API. It is possible for you to use the standard OnePoint Tiny URL (`1pt.mobi`) or for us to register a domain and set this
+OnePoint Global supports custom Tiny URL's for each user of the API. It is possible for you to use the standard OnePoint Global Tiny URL (`1pt.mobi`) or for us to register a domain and set this
 up for your account. For more information on this please contact us directly.
 
-We also allow you to specify the tiny url as part of the call. In this instance you will responsible for ensure it has been successfully mapped with the OnePoint Global Platform.
+We also allow you to specify the tiny url as part of the call. In this instance you will be responsible for ensuring it has been successfully mapped with the OnePoint Global Platform.
 
 ## Metadata
-It is possible associate meta data at the same time as registering the tinyurl so that it can be provided in any [callback](Callbacks.md).
+It is possible to associate meta data at the same time as registering the tinyurl so that it can be provided in any [callback](Callbacks.md).
 
 ## Register
 Register a URL in return for a tiny URL.

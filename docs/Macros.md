@@ -37,7 +37,7 @@ Parameters have to be separated by commas. If a parameter includes a parameter t
 ```
 The above macro will convert the long URL into a tiny URL using the domain name provided as the second parameter as the tiny URL.
 
-In the above examples the parameters are literal entries in message. It is also possible to refer to external references by using reference macros. For example it is possible to refer to values provided along with the method call when sending a message:
+In the above examples the parameters are literal entries in the message. It is also possible to refer to external references by using reference macros. For example it is possible to refer to values provided along with the method call when sending a message:
 
 ```
 {tiny({long}, {short})}

@@ -4,7 +4,7 @@ title: Home
 nav_order: 1
 ---
 # Welcome to the OnePoint Global API
-Welcome to the OnePoint API Documentation. This is for general use of OnePoint Globals Open API. Using this RESTful API you can send and receive SMS messages, track the delivery of sent messages, retrieve the message history, manage keywords and surveys.
+Welcome to the OnePoint Global API Documentation. This is for general use of OnePoint Global's Open API. Using this RESTful API you can send and receive SMS messages, track the delivery of sent messages, retrieve the message history, manage keywords and surveys.
 
 ## Base URL
 All URLs referenced in this documentation have the following base:
@@ -15,7 +15,7 @@ https://api.1pt.mobi/gateway2/api
 The API is offered over HTTPS, HTTP is not supported in order to support a secure platform.
 
 ## Authentication
-OnePoint's API requires authentication to be achieved to gain a session that is then used for subsequent requests to the API. It is then recommended that you discard the session in a proper manner.
+OnePoint Global's API requires authentication to be achieved to gain a session that is then used for subsequent requests to the API. It is then recommended that you discard the session in a proper manner.
 
 Authentication is achieved using the following API:
 ```

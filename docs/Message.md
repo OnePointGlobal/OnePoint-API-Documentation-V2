@@ -45,8 +45,8 @@ Destination | Mandatory | The destination of the message. This must be the full 
 Message | Mandatory | The text message to send. This can be up to 2000 characters long.
 Reply | Optional (Default: false) | A boolean value indicating whether the message can be replied to or not. If this is true then the destination may be replaced depending on destination value and the route the message has to take to get to its destination.
 When | Optional (Default: now) | A date and time indicating when the message should be sent. This allows the opportunity to submit a message to be sent at a later date.
-Window | Optional (Default: any time) | An array of windows that the message can be sent. The allows you to specify different windows as to when the message can be sent. Each window follows these [rules](Windows.md).
-Callback | Optional (Default: Account Settings) | There is the ability to override the standard callback method associate with you r account. For more information on callbacks [check here](Callbacks.md).
+Window | Optional (Default: any time) | An array of time windows that the message can be sent. The allows you to specify different time windows as to when the message can be sent. Each window follows these [rules](Windows.md).
+Callback | Optional (Default: Account Settings) | There is the ability to override the standard callback method associate with your account. For more information on callbacks [check here](Callbacks.md).
 Lookup | Optional (Default: false) | A boolean value indicating whether a lookup on the destination number should be carried out before it is sent to see whether the number is a landline or mobile. If the number is a landline it will not be sent. This combines the lookup method and the send into one process for you.
 Test | Optional (Default: false) | A boolean value that indicates whether the message should be sent or not. If set to true the message will not be sent, but the internal OnePoint Global Routing will be tested.
 Timeout | Options (Default: 4320) | a numeric value defining the number of minutes the OnePoint Global Platform will maintain a message to be replied to. The default is 3 days.
@@ -91,7 +91,7 @@ Status | Description
 400 | There was a problem sending the message. Please refer to the status
 
 ## Kill
-Kill off any outstanding activity with one or some message, by providing an array or information.
+Kill off any outstanding activity with one or some messages, by providing an array or information.
 ```
 URL: base/Message/Kill
 Method: POST
@@ -118,7 +118,7 @@ Method: POST
 Name | Type | Description
 ---- | ---- | -----------
 Destination | Mandatory | The destination of the message. This must be the full number prefixed with the country code and no leading zeros.
-Callback | Optional (Default: Account Settings) | There is the ability to override the standard callback method associate with you r account. For more information on callbacks check here.
+Callback | Optional (Default: Account Settings) | There is the ability to override the standard callback method associate with your account. For more information on callbacks check here.
 MetaData | Optional | For more information on metadata check [here](MetaData.md).
 
 ### Returns 

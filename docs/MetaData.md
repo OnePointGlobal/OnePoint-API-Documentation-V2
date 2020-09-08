@@ -10,7 +10,7 @@ nav_order: 5
 
 To enhance the API experience and make it easier to track your data held within the OnePoint Global Platform we offer the ability to supply metadata along with any API method (where appropriate). This meta data is then returned in any call backs or along with data provision (for example collecting a message history).
 
-Meta Data takes the form of a JSON array and can contain any number of entries support your needs. For example:
+Meta Data takes the form of a JSON array and can contain any number of entries to support your needs. For example:
 ```
 [
     { "RequestID": "1234567890DEFED" },
