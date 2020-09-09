@@ -38,7 +38,7 @@ Keyword | The keyword which can be between 3 and 50 characters long can only con
 Type | The keyword type can be any one of the following - normal, stop, help or info. 
 Response | For stop, help or info keywords the response is the automatic response sent to the respondent. 
 FinishDate | The date the keyword expires. This should be set in the future.
-MetaData | Optional | For more information on metadata check [here](MetaData.md).
+MetaData | (Optional) For more information on metadata check [here](MetaData.md).
 
 ### Campaigns
 Campaigns allow special keywords (defined by type equal to stop, help and info) to matched to recipients. For more information on the stop process [click here](Stop.md). The campaign is picked up from the metadata by looking for the `Campaign` value. If a message is sent out to a recipient with the same campaign value then when they keywords are used that have a matching campaign Id that come from that recipient will be automatically matched and if a response is specified it will be used. The campaign will be associated with the recipient until another campaign is associated.
