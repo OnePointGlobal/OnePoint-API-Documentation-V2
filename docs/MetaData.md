@@ -74,10 +74,10 @@ Content:
 ```
 For more information on callbacks please check [here](Callbacks.md).
 
-## Key Metadata values
+## Key Metadata Values
 Whilst most metadata values are not reviewed by the OnePoint Global platform in any specific way there are some values that are used by the platform if present:
 
 Value | Description
 ----- | -----------
-Campaign | The `Campaign` is used in the keyword process to match recipient messages to specific wkeywords for STOP, HELP and INFO. For more information please [click here](Keyword.md).
+Campaign | The `Campaign` is used in the keyword process to match recipient messages to specific keywords for STOP, HELP and INFO. For more information please [click here](Keyword.md).
 
