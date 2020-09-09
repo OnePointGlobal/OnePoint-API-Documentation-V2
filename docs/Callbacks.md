@@ -21,6 +21,7 @@ When a message is sent it is possible to specify a callback method or use the on
 1. A carrier provides an update on the progress of the message, which also include a failure.
 1. A tiny URL provided by OnePoint Global is clicked on in a message that was provided.
 1. A recipient replies with the keywords `STOP`, `HELP` or `INFO`.
+1. A recipient replies with an `UNSTOP`.
 1. A recipient responds with a keyword that is owned by you.
 1. A recipient responds and you were the last account to send a message to them.
 1. The message was killed before it was sent.
@@ -85,6 +86,7 @@ Message | An inbound message that you will need to process.
 Info | An inbound message that has been processed by OnePoint Global as an info message.
 Help | An inbound message that has been processed by OnePoint Global as an help message.
 Stop | A inbound message that has been detected as a STOP message from a recipient and has been added to the OnePoint Global STOP list.
+Unstop | an inbound message that has been detected as an UNSTOP message from a recipient and gets removed from the OnePoint Global STOP list.
 Keyword | An inbound message that has been processed by OnePoint Global as one of your keywords.
 Click | A tiny URL was clicked on. In this instance the message includes the tiny URL that was clicked on.
 Killed | The message has been killed before it was sent.

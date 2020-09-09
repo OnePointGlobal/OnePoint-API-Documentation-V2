@@ -23,7 +23,7 @@ If a callback to your platform fails we have an Exception Handling process. For 
 
 ## Who handles STOP's in foreign languages?
 
-The OnePoint Global Platform has STOP handling built in. OnePoint Global manages the list of words that are detected as STOP and a [callback](Callbacks.md) can be used to let you know that the STOP occurred. OnePoint Global has a [Global Stop List](Stop.md) that is managed on behalf of all of its clients to ensure that numbers are not contacted incorrectly.
+The OnePoint Global Platform has STOP handling built in. OnePoint Global manages the list of words that are detected as STOP and a [callback](Callbacks.md) can be used to let you know that the STOP occurred. OnePoint Global has a [Global Stop List](Stop.md) that is managed on behalf of all of its clients to ensure that numbers are not contacted incorrectly and the ability to associate campaign keywords with the functionality of STOP, HELP and INFO.
 
 ## Who handles data destruction?
 
