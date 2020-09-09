@@ -5,7 +5,7 @@
 It is possible to secure all your access to the API and the use of [callbacks](Callbacks.md).
 
 ## Keys
-Rather than use the standard Authentication process as defined in the [Account Section](Account.md) the OnePoint Global Platform offers HMAC Authentication. HMAC Authentication is a mechanism for calculating a message authentication code using a hash function in combination with a shared secret key between the two parties involved in sending and receiving the data (Front-end client and Back-end HTTP service).
+Rather than use the standard Authentication process as defined in the [Account Section](Account.md) the OnePoint Global Platform offers [HMAC Authentication](https://en.wikipedia.org/wiki/HMAC). HMAC Authentication is a mechanism for calculating a message authentication code using a hash function in combination with a shared secret key between the two parties involved in sending and receiving the data (Front-end client and Back-end HTTP service).
 
 In your OnePoint Global Account you can set up a key which consists of the following attributes:
 
