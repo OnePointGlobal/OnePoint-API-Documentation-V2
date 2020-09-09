@@ -161,3 +161,6 @@ Action | The action to take. This can contain and/or SMS and Email as keywords. 
 
 ### OnePoint Global Administration Account
 Your OnePoint Global Administration Account includes the same parameters that you can use in the API with the addition of a an email and/or SMS circulation list.
+
+### Security
+All callbacks made to your platform will automatically follow the [HMAC approach to security](Security.md).

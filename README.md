@@ -54,6 +54,8 @@ Authorization: Basic ABCDEFG
 Method: POST
 ```
 
+> For more advanced security process the OnePoint Global Platform Supports HMAC. For more information please [click here](docs/Callbacks.md).
+
 ## HTTP Statuses
 Every API will return a status which can be one of the following:
 

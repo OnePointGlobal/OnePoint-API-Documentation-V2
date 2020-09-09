@@ -7,7 +7,7 @@ nav_order: 3
 
 > For more information visit the [main page](../README.md)
 
-The Account API's are made up of the following:
+The Account APIs are made up of the following:
 
 ## Login
 Before any other API is used you will need a Session Id. This API requests one.
