@@ -40,7 +40,7 @@ The above macro will convert the long URL into a tiny URL using the domain name 
 In the above examples the parameters are literal entries in the message. It is also possible to refer to external references by using reference macros. For example it is possible to refer to values provided along with the method call when sending a message:
 
 ```
-{tiny({long}, {short})}
+{tiny({long}?id={RequestID}, {short})}
 ```
 In this example the `{long}` and `{short}` references must be included in the method to send a message. For example:
 
@@ -57,13 +57,10 @@ Method: POST
   "Callback": "https://yourco.com/api/messagetracker",
   "Lookup": true,
   "Test": false,
-  "Macros":
+  "MetaData": 
     [
         { "long" : "https://onepointglobal.com" },
         { "short" : "1pt.mobi" }
-    ]
-  "MetaData": 
-    [
         { "RequestID": "1234567890DEFED" },
         { "OrgID": 1010 },
         { "Instance": "ETRERT"},
@@ -74,13 +71,6 @@ Method: POST
 ```
 
 > If there is a conflict with the macro list supplied in the API call and the standard macros the macro list takes precedence.
-
-## Using the MetaData
-In the same way the Macros can be used from the API call it is also possible to use the MetaData entries. This saves on duplication of entries. Using the above example the following macro formation could be used:
-
-```
-{tiny({long}/{RequestID}, {short})}
-```
 
 For a full list of macros please check [here](MacroList.md).
 

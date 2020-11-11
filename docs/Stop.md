@@ -19,8 +19,10 @@ INFO | Similar to the HELP keyword
 ## The Process
 The STOP keyword triggers a special process within the OnePoint Global system that consists of the following steps:
 
-1. The mobile number is placed on the OnePoint Global STOP List
+1. The mobile number is placed on the OnePoint Global STOP List.
 1. You are notified that this has taken place should you have a [Callback](Callbacks.md) set up.
+
+> It is possible to opt out of OnePoint Globals STOP List management and refer all STOPS to your platform. By using your OnePoint Global Account you can confirm that you agree to supporting specific country regulations and we will pass all message back to your platform for management. Please note, at the same time we will be managing the numbers for our other clients, which will mean that they will be added to the relevant STOP lists.
 
 ### Unstopping
 The recipient can cancel their entry in the stop list by replying with START, YES or UNSTOP.
