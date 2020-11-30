@@ -9,6 +9,8 @@ nav_order: 3
 
 The Account APIs are made up of the following:
 
+> These APIs are for backward compatibility, but will be removed in early 2021 and will no longer be supported.
+
 ## Login
 Before any other API is used you will need a Session Id. This API requests one.
 ```

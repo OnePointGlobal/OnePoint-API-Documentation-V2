@@ -4,7 +4,7 @@ title: Home
 nav_order: 1
 ---
 # Welcome to the OnePoint Global API
-Welcome to the OnePoint Global API Documentation. This is for general use of OnePoint Global's Open API. Using this RESTful API you can send and receive SMS messages, track the delivery of sent messages, retrieve the message history, manage keywords and surveys.
+Welcome to the OnePoint Global API Documentation. This is for general use of OnePoint Globals Open API. Using this RESTful API you can send and receive SMS messages, track the delivery of sent messages, retrieve the message history, manage keywords and surveys.
 
 ## Base URL
 All URLs referenced in this documentation have the following base:
@@ -15,46 +15,7 @@ https://api.1pt.mobi/gateway2/api
 The API is offered over HTTPS, HTTP is not supported in order to support a secure platform.
 
 ## Authentication
-OnePoint Global's API requires authentication to be achieved to gain a session that is then used for subsequent requests to the API. It is then recommended that you discard the session in a proper manner.
-
-Authentication is achieved using the following API:
-```
-URL: base/Account/LoginWithUid
-Method: POST
-Content: "23409328402398432048"
-```
-
-All API's will return either a success status (200) or a failure status which can vary depending on the error. If the above API is successful then it will return a Session ID in the following format:
-```
-{ "SessionId": "ABCCDEFG" }
-```
-
-The Session ID must be used in subsequent API calls by placing it in the headers as a basic authentication header. For example, to send an SMS the following API would be used:
-```
-URL: base/Message/Send
-Header:
-Authorization: Basic ABCDEFG
-Method: POST
-Content:
-{
-  "Source": "12345678901",
-  "Destination": "12345678901",
-  "Message": "message",
-  "Reply": true,
-  "When": "2020-02-04T11:47:33.645773+00:00"
-  "Window": [{ From: "09:00", To: "16:00", Days: "1,2,3,4,5"}]
-}
-```
-
-When a session is no longer required then the following API will remove it:
-```
-URL: base/Account/Logout
-Header:
-Authorization: Basic ABCDEFG
-Method: POST
-```
-
-> For more advanced security process the OnePoint Global Platform Supports HMAC. For more information please [click here](docs/Callbacks.md).
+OnePoint Global Platform supports the use of HMAC. For more information please [click here](docs/Security.md).
 
 ## HTTP Statuses
 Every API will return a status which can be one of the following:
@@ -79,7 +40,6 @@ OnePoint Global makes it possible to include macros in your messaging that give 
 ## API's
 The API's are split into the following:
 
-1. [Account](docs/Account.md) - Session Management
 1. [Keyword](docs/Keyword.md) - Keyword Management
 1. [TinyUrl](docs/TinyUrl.md) - TinyUrl Creation
 1. [Message](docs/Message.md) - SMS Message Management
