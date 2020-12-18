@@ -9,7 +9,7 @@ Welcome to the OnePoint Global API Documentation. This is for general use of One
 ## Base URL
 All URLs referenced in this documentation have the following base:
 ```
-https://api.1pt.mobi/gateway2/api
+https://sms.1pt.mobi/api
 ```
 
 The API is offered over HTTPS, HTTP is not supported in order to support a secure platform.

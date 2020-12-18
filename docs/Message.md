@@ -94,7 +94,7 @@ Status | Description
 Kill off any outstanding activity with one or some messages, by providing an array or information.
 ```
 URL: base/Message/Kill
-Method: POST
+Method: DELETE
 {
   [
     {

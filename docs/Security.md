@@ -21,13 +21,15 @@ It is important to distinguish between this approach and the approach defined th
 #### Step 1
 When a client makes a call to the OnePoint Global Platform the Client should build a string by combining all the data that will be sent, this string contains the following parameters (AppId, HTTP method, request URI, request time stamp, nonce, and Base 64 string representation of the request pay load).
 
-> Note: Request time stamp is calculated using UNIX time (number of seconds since Jan. 1st 1970) to overcome any issues related to a different timezone between client and server. Nonce: is an arbitrary number/string used only once.
+> Note: Request time stamp is calculated using UNIX time (number of seconds since Jan. 1st 1970) to overcome any issues related to a different timezone between client and server.
+
+> Note: Nonce: is an arbitrary number/string used only once.
 
 #### Step 2
 Client will hash this large string built in the first step using a hash algorithm such as (SHA-1) and the API Key assigned to it, the result for this hash is a unique signature for this request.
 
 #### Step 3
-The signature will be sent in the Authorization header using the custom scheme such `X-OPG-Signature`. The data in the Authorization header will contain the AppId, request time stamp, and nonce separated by colon ‘:’. The format for the Authorization header will be like: `[Authorization: X-OPG-Signature APPId:Signature:Nonce:Timestamp]`.
+The signature will be sent in the Authorization header using the custom scheme `X-OPG-Signature`. The data in the Authorization header will contain the AppId, request time stamp, and nonce separated by colon ‘:’. The format for the Authorization header will be like: `[Authorization: X-OPG-Signature APPId:Signature:Nonce:Timestamp]`.
 
 #### Step 4
 Client sends the request as usual along with the data generated in step 3 in the Authorization header.
@@ -47,7 +49,7 @@ Assuming the OnePoint Global Platform was able to look up this APP Id from the r
 > If the client is receiving a [callback](Callbacks.md) request then the time stamp and nonce checks will not be valid.
 
 #### Step 4
-Server will rebuild a string containing the same data received in the request by adhering to the same parameters orders and encoding followed in the client application, usually this agreement is done up front between the client application and the back-end service and shared using proper documentation.
+Server will rebuild a string containing the same data received in the request by adhering to the same parameters orders and encoding followed in the client application.
 
 #### Step 5
 Server will hash the string generated in previous step using the same hashing algorithm used by the client (SHA-1) and the same API Key obtained from the secure repository for this client.
