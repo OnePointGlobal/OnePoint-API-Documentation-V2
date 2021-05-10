@@ -8,7 +8,7 @@ nav_order: 2
 > For more information visit the [main page](../README.md)
 
 ## 1. Get A DIY SMS Account
-In order to use the API you will need a DIY SMS Account. You can register for this on the developers portal at https://diysms.onepoitnglobal.com.
+In order to use the API you will need a DIY SMS Account. You can register for this on the developers portal at https://diysms.onepointglobal.com.
 
 ## 2. Create a Key
 The DIY SMS API uses [HMAC Security](Security.md). To use this you will need to create a Key. A Key consistts of two parts:
