@@ -19,14 +19,14 @@ Expiry Date | In line with secure processes the key will be made available for a
 It is important to distinguish between this approach and the approach defined through the [Account API Process](Account.md). With this process there is no need to login or logout. In addition the [Callback Process] will automatically have this built in allowing you to choose to implement it.
 
 #### Step 1
-When a client makes a call to the OnePoint Global Platform the Client should build a string by combining all the data that will be sent, this string contains the following parameters (AppId, HTTP method, request URI, request time stamp, nonce, and Base 64 string representation of the request pay load).
+When a client makes a call to the OnePoint Global Platform the Client should build a string by combining all the data that will be sent, this string contains the following six parameters (AppId, HTTP method, request URI, request time stamp, nonce, and Base 64 string representation of the request pay load [also known as the body or content of the request]) concatenated together with no delimiter.
 
 > Note: Request time stamp is calculated using UNIX time (number of seconds since Jan. 1st 1970) to overcome any issues related to a different timezone between client and server.
 
 > Note: Nonce: is an arbitrary number/string used only once.
 
 #### Step 2
-Client will hash this large string built in the first step using a hash algorithm such as (SHA-1) and the API Key assigned to it, the result for this hash is a unique signature for this request.
+Client will hash this large string built in the first step using an SHA-1 hash algorithm and the API Key assigned to it, the result for this hash is a unique signature for this request.
 
 #### Step 3
 The signature will be sent in the Authorization header using the custom scheme `X-OPG-Signature`. The data in the Authorization header will contain the AppId, request time stamp, and nonce separated by colon ‘:’. The format for the Authorization header will be like: `[Authorization: X-OPG-Signature APPId:Signature:Nonce:Timestamp]`.
