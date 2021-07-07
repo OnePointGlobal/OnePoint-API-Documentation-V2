@@ -13,7 +13,7 @@ Messaging usage.
 ## Message History
 Retrieve a message history for all messages sent and received for your account.
 ```
-URL: base/Usage/History
+URL: base/Usage/History[&page={page}]
 Method: POST
 {
     "Limit": 10,
@@ -37,6 +37,7 @@ Method: POST
 
 Name | Type | Description
 ---- | ---- | -----------
+Page | Optional (default: 1) | Used as an optional parameter on the URL, the page of results to request.
 Limit | Optional (default: All messages) | The total number of messages to receive. This could be useful if you are not set up to receive the total number for any particular reason.
 Pagesize | Optional (default: 10) | The number of messages to return in one batch.
 DateRange | Optional (default: all dates) | The start date and finish date that the messages were sent and received.
